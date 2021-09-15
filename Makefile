@@ -8,7 +8,7 @@ TEST_TIMEOUT := 30s
 INTEGRATION_TIMEOUT := 120s
 GOTEST_FLAGS := -v
 GOTEST_ARGS := 
-
+PROTO_FILE :=
 
 check: vet fmtcheck
 jenkins: check test integration
@@ -33,5 +33,8 @@ test:
 
 integration:
 	$(GO) test $(GOTEST_FLAGS) -race -timeout=$(INTEGRATION_TIMEOUT) -tags=integration -args $(GOTEST_ARGS)
+
+generate:
+	cd pb && chmod +x ./generate.sh && ./generate.sh && $(GO) generate
 
 .PHONY: check coverage integration_cover fmtcheck integration jenkins test vet

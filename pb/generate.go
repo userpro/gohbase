@@ -1,8 +1,2 @@
-// Copyright (C) 2015  The GoHBase Authors.  All rights reserved.
-// This file is part of GoHBase.
-// Use of this source code is governed by the Apache License 2.0
-// that can be found in the COPYING file.
-
 package pb
-
-//go:generate sh -c "protoc --go_out=. *.proto"
+//go:generate sh -c "protoc  --go_opt MQuota.proto=../pb --go_opt MErrorHandling.proto=../pb --go_opt MLockService.proto=../pb --go_opt MReplication.proto=../pb --go_opt MHBase.proto=../pb --go_opt MEncryption.proto=../pb --go_opt MAdmin.proto=../pb --go_opt MExport.proto=../pb --go_opt MRSGroup.proto=../pb --go_opt MFS.proto=../pb --go_opt MMapReduce.proto=../pb --go_opt MAccessControl.proto=../pb --go_opt MClient.proto=../pb --go_opt MSnapshotCleanup.proto=../pb --go_opt MRegionServerStatus.proto=../pb --go_opt MBackup.proto=../pb --go_opt MRSGroupAdmin.proto=../pb --go_opt MRegistry.proto=../pb --go_opt MComparator.proto=../pb --go_opt MClusterId.proto=../pb --go_opt MZooKeeper.proto=../pb --go_opt MRPC.proto=../pb --go_opt MWAL.proto=../pb --go_opt MClusterStatus.proto=../pb --go_opt MFilter.proto=../pb --go_opt MSnapshot.proto=../pb --go_opt MTooSlowLog.proto=../pb --go_opt MTracing.proto=../pb --go_opt MAuthentication.proto=../pb --go_opt MProcedure.proto=../pb --go_opt MVisibilityLabels.proto=../pb --go_opt MAggregate.proto=../pb --go_opt MRecentLogs.proto=../pb --go_opt MHFile.proto=../pb --go_opt MMasterProcedure.proto=../pb --go_opt MMaster.proto=../pb --go_opt MMultiRowMutation.proto=../pb --go_opt MCell.proto=../pb --go_opt MRegionNormalizer.proto=../pb --go_opt MLoadBalancer.proto=../pb --go_opt MBucketCacheEntry.proto=../pb --go_out=. *.proto"
