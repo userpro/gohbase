@@ -3,7 +3,7 @@ package hrpc
 import (
 	"context"
 
-	"github.com/tsuna/gohbase/pb"
+	"github.com/userpro/gohbase/pb"
 	"google.golang.org/protobuf/proto"
 )
 

@@ -25,10 +25,10 @@ import (
 	"math"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/tsuna/gohbase"
-	"github.com/tsuna/gohbase/filter"
-	"github.com/tsuna/gohbase/hrpc"
-	"github.com/tsuna/gohbase/pb"
+	"github.com/userpro/gohbase"
+	"github.com/userpro/gohbase/filter"
+	"github.com/userpro/gohbase/hrpc"
+	"github.com/userpro/gohbase/pb"
 	"google.golang.org/protobuf/proto"
 )
 

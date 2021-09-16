@@ -13,8 +13,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/tsuna/gohbase/hrpc"
-	"github.com/tsuna/gohbase/pb"
+	"github.com/userpro/gohbase/hrpc"
+	"github.com/userpro/gohbase/pb"
 	"google.golang.org/protobuf/proto"
 )
 
